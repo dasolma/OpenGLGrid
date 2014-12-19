@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.dasolma.openglgrid.Grid
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/size"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/fps"
+
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="@android:color/black" />
+
+
+    <SeekBar
+        android:id="@+id/weight_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="25"
+        android:progressDrawable="@drawable/prograssbar"
+        android:secondaryProgress="0"
+        android:layout_gravity="left|bottom" />
+
+</FrameLayout>
